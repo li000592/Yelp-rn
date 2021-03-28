@@ -13,7 +13,7 @@ function DetailView(props) {
           <CardItem>
             <Left>
               <Body>
-                <Text style={{ fontWeight: "bold" }}>{data.name}</Text>
+                <Text style={{ fontWeight: "bold", fontSize: 18 }}>{data.name}</Text>
                 <Text note>&#9733;{data.rating}</Text>
               </Body>
             </Left>

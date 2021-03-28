@@ -22,7 +22,12 @@ function Search(props) {
       <Header searchBar rounded>
         <Item>
           <Icon name="ios-search" />
-          <Input placeholder="Search" onChangeText={handleChangeAndEnter} onSubmitEditing={handleEnter} />
+          <Input
+            returnKeyLabel="search"
+            placeholder="Search"
+            onChangeText={handleChangeAndEnter}
+            onSubmitEditing={handleEnter}
+          />
           <Icon name="ios-people" />
         </Item>
         <Button transparent onPress={() => console.log("ONPRESS")}>

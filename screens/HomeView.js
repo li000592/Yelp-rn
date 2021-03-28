@@ -11,7 +11,7 @@ import Tabs from "../components/Tabs"
 import getYelpData from "../resources/getYelpData"
 import getLocation from "../resources/getLocation"
 
-function HomeView() {
+export default function HomeView() {
   const navigation = useNavigation()
   const [isLoading, setIsLoading] = useState(true)
   const [yelpData, setYelpData] = useState([])
@@ -66,5 +66,3 @@ const styles = StyleSheet.create({
     height: 10,
   },
 })
-
-export default HomeView
